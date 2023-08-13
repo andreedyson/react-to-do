@@ -31,12 +31,12 @@ const ToDoForm = ({ onAddTask }) => {
           ref={taskInputRef}
           autoComplete="off"
         />
-        <button className="bg-purple-800 text-white font-bold p-2 ml-2">
+        <button className="p-2 ml-2 font-bold text-white bg-purple-800">
           Add task
         </button>
       </form>
       {error ? (
-        <p className="text-lg text-red-600 font-bold mt-2">
+        <p className="mt-2 text-lg font-bold text-red-600">
           Please enter a task
         </p>
       ) : (

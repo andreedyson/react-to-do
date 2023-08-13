@@ -26,15 +26,17 @@ const App = () => {
   };
 
   return (
-    <div className="p-8 bg-[#353535] mt-48 text-center">
-      <h1 className="text-4xl text-white font-bold mb-8">To-Dos App</h1>
-      <ToDoForm onAddTask={addTaskHandler} />
-      <ToDoList
-        tasks={todos}
-        toggleCompleted={toggleComplete}
-        deleteTasks={deleteTask}
-      />
-      <p className="text-cyan-400 font-bold mt-8">Created by Andre Edyson</p>
+    <div className="flex items-center justify-center w-full min-h-screen bg-[#855afd]">
+      <div className="p-8 bg-[#353535] text-center">
+        <h1 className="mb-8 text-4xl font-bold text-white">To-Dos App</h1>
+        <ToDoForm onAddTask={addTaskHandler} />
+        <ToDoList
+          tasks={todos}
+          toggleCompleted={toggleComplete}
+          deleteTasks={deleteTask}
+        />
+        <p className="mt-8 font-bold text-cyan-400">Created by Andre Edyson</p>
+      </div>
     </div>
   );
 };
